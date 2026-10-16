@@ -1,0 +1,139 @@
+
+# test_cases.yaml
+# Label convention: 0 = Fake, 1 = Real
+# These are paraphrased examples for an initial external test.
+# Verify each source and label before reporting benchmark metrics.
+
+test_cases:
+  # ---------- REAL NEWS EXAMPLES ----------
+
+  - id: EXT001
+    source: "Reuters - https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16/"
+    headline: "India reports AI agents accessed live business systems"
+    text: "India's cybersecurity agency reported that AI models under testing accessed confidential business data in Indian organizations. The report raised concerns about testing safeguards and the security of AI systems."
+    expected_label: 1
+
+  - id: EXT002
+    source: "Reuters - https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/"
+    headline: "China proposes additional export controls for advanced technologies"
+    text: "China proposed new export controls covering artificial intelligence, biotechnology and solar technologies. The proposals relate to national security and the international transfer of sensitive technologies."
+    expected_label: 1
+
+  - id: EXT003
+    source: "Reuters - https://www.reuters.com/technology/imf-chief-says-ai-risks-may-exceed-opportunities-without-safeguards-ethical-2026-10-16/"
+    headline: "IMF chief warns of AI risks without safeguards"
+    text: "The head of the International Monetary Fund warned that artificial intelligence risks could outweigh its benefits without suitable safeguards. Discussions included employment, infrastructure, regulation and economic stability."
+    expected_label: 1
+
+  - id: EXT004
+    source: "Reuters - https://www.reuters.com/business/anthropic-grants-ai-evaluator-metr-employee-level-access-its-models-2026-10-15/"
+    headline: "Anthropic expands external access for AI safety evaluation"
+    text: "Anthropic granted an independent evaluation organization greater access to its systems to support AI safety research. The arrangement is intended to help external evaluators examine model risks while protecting restricted information."
+    expected_label: 1
+
+  - id: EXT005
+    source: "Reuters - https://www.reuters.com/world/india/indias-proxy-ai-trade-shines-bleak-year-stocks-2026-10-14/"
+    headline: "Indian companies linked to AI infrastructure attract investor attention"
+    text: "Some Indian companies connected to data centres, optical fibre and power infrastructure gained as demand for artificial intelligence infrastructure increased. Analysts also warned that high valuations and slower investment could create risks."
+    expected_label: 1
+
+  # ---------- FALSE-CLAIM EXAMPLES ----------
+  # These describe claims fact-checkers rated false.
+  # They are not necessarily original fake-news articles.
+
+  - id: EXT006
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "Trump names Boebert secretary of education"
+    text: "A social media post claimed that Donald Trump had named Lauren Boebert as secretary of education. PolitiFact rated the claim false."
+    expected_label: 0
+
+  - id: EXT007
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "Pfizer representatives set a car on fire to silence a medical discovery"
+    text: "A social media video claimed that Pfizer representatives set fire to a person's car because she had discovered an anti-diabetes method. PolitiFact rated the claim false."
+    expected_label: 0
+
+  - id: EXT008
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "Pride flags permanently prohibited at FIFA Club World Cup 2025"
+    text: "A social media post claimed that pride flags were permanently prohibited at the FIFA Club World Cup in 2025. PolitiFact rated the claim false."
+    expected_label: 0
+
+  - id: EXT009
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "Oprah and other celebrities received millions from a political campaign"
+    text: "A social media claim alleged that a political campaign paid Oprah Winfrey and other celebrities millions of dollars. PolitiFact rated the claim mostly false."
+    expected_label: 0
+
+  - id: EXT010
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A news network reported thousands of votes for internet meme names"
+    text: "A social media post claimed that a CNN headline reported 75000 votes written in for the names Hawk Tuah and Talk Tuah. PolitiFact rated the claim Pants on Fire."
+    expected_label: 0
+
+  # ---------- ADDITIONAL REAL-STYLE CASES ----------
+  # Verify the source article and label before using these
+  # as benchmark examples.
+
+  - id: EXT011
+    source: "Reuters - https://www.reuters.com/world/india/ai-pressure-client-caution-cloud-indian-it-earnings-september-quarter-2026-10-01/"
+    headline: "AI pressure and cautious clients weigh on Indian IT firms"
+    text: "Indian technology companies faced pressure from cautious client spending and AI-driven pricing changes. Analysts expected limited quarterly growth and discussed the possible effects on margins and revenue forecasts."
+    expected_label: 1
+
+  - id: EXT012
+    source: "Reuters - https://www.reuters.com/world/india/modis-three-pronged-challenge-2026-10-13/"
+    headline: "India faces political and economic challenges"
+    text: "A Reuters analysis discussed domestic political pressure, foreign policy tensions and economic uncertainty facing India's government. The report considered protests, trade negotiations and financial pressures."
+    expected_label: 1
+
+  - id: EXT013
+    source: "Reuters - https://www.reuters.com/world/india/influential-hindu-group-urges-india-block-starlink-amid-musk-ambani-feud-2026-10-13/"
+    headline: "Group urges India to block Starlink"
+    text: "An influential Indian organization urged the government to block Starlink's entry into India, citing national security concerns. The report discussed regulatory reviews and competition in satellite internet services."
+    expected_label: 1
+
+  - id: EXT014
+    source: "Reuters - https://www.reuters.com/commentary/breakingviews/ai-boom-stumbles-over-white-swan-events-2026-10-15/"
+    headline: "Investors reassess risks in the AI infrastructure boom"
+    text: "Market commentary examined financial risks facing companies investing in AI infrastructure. Inflation, borrowing costs and concerns about highly leveraged businesses contributed to uncertainty among investors."
+    expected_label: 1
+
+  - id: EXT015
+    source: "Reuters - https://www.reuters.com/world/india/indias-proxy-ai-trade-shines-bleak-year-stocks-2026-10-14/"
+    headline: "AI infrastructure demand influences Indian stock performance"
+    text: "Companies involved in connectivity, power and data centres benefited from interest in AI infrastructure. Analysts cautioned that valuations could be vulnerable if spending on AI slows."
+    expected_label: 1
+
+  # ---------- ADDITIONAL FALSE-CLAIM CASES ----------
+  # Verify each fact-check before using these for formal metrics.
+
+  - id: EXT016
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A video shows CNN reporting that a famous athlete's campaign paid celebrities"
+    text: "A viral social media post alleged that a political campaign paid celebrities large sums of money. PolitiFact's fact-checking coverage rated a related claim mostly false."
+    expected_label: 0
+
+  - id: EXT017
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A photograph proves a politician worked at a fast-food restaurant"
+    text: "A social media post circulated an old photograph and claimed it showed a politician working at a fast-food restaurant. PolitiFact rated the claim false."
+    expected_label: 0
+
+  - id: EXT018
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A television network misspelled a state name in a literacy report"
+    text: "A social media post claimed that the Associated Press misspelled Mississippi in a headline about literacy. PolitiFact rated the claim false."
+    expected_label: 0
+
+  - id: EXT019
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A viral post claims a candidate promised to release a jailed foreign politician"
+    text: "Social media videos claimed that a presidential candidate promised to secure the release of Pakistan's former prime minister and help him regain power. PolitiFact rated the claim Pants on Fire."
+    expected_label: 0
+
+  - id: EXT020
+    source: "PolitiFact - https://politifact.com/fake-news/"
+    headline: "A viral image claims a celebrity was replaced by a clone during an arrest"
+    text: "A social media post claimed that federal authorities arrested a clone instead of the real celebrity. PolitiFact rated the claim Pants on Fire."
+    expected_label: 0

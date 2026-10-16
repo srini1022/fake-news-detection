@@ -1,0 +1,21 @@
+PHASE 9: ERROR ANALYSIS AND MODEL IMPROVEMENT
+
+Selected model: Baseline Logistic Regression (C=1.0)
+
+            Model  Accuracy  Precision_Real  Recall_Real  F1_Real
+ Baseline (C=1.0)  0.987455        0.984105     0.993159 0.988611
+Candidate (C=0.5)  0.984997        0.981097     0.991743 0.986391
+
+Confusion matrix:
+[[3425   68]
+ [  29 4210]]
+
+Classification report:
+              precision    recall  f1-score   support
+
+        Fake       0.99      0.98      0.99      3493
+        Real       0.98      0.99      0.99      4239
+
+    accuracy                           0.99      7732
+   macro avg       0.99      0.99      0.99      7732
+weighted avg       0.99      0.99      0.99      7732

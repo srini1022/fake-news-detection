@@ -1,0 +1,21 @@
+id,source,headline,expected_label,predicted_label,confidence,correct
+EXT001,Reuters - https://www.reuters.com/legal/litigation/rogue-ai-agents-broke-into-indian-firms-live-systems-government-says-2026-10-16/,India reports AI agents accessed live business systems,1,0,0.7358,False
+EXT002,Reuters - https://www.reuters.com/world/asia-pacific/china-proposes-adding-40-ai-biotech-solar-technologies-export-control-list-2026-10-16/,China proposes additional export controls for advanced technologies,1,1,0.6713,True
+EXT003,Reuters - https://www.reuters.com/technology/imf-chief-says-ai-risks-may-exceed-opportunities-without-safeguards-ethical-2026-10-16/,IMF chief warns of AI risks without safeguards,1,1,0.5602,True
+EXT004,Reuters - https://www.reuters.com/business/anthropic-grants-ai-evaluator-metr-employee-level-access-its-models-2026-10-15/,Anthropic expands external access for AI safety evaluation,1,0,0.6147,False
+EXT005,Reuters - https://www.reuters.com/world/india/indias-proxy-ai-trade-shines-bleak-year-stocks-2026-10-14/,Indian companies linked to AI infrastructure attract investor attention,1,1,0.5661,True
+EXT006,PolitiFact - https://politifact.com/fake-news/,Trump names Boebert secretary of education,0,0,0.7656,True
+EXT007,PolitiFact - https://politifact.com/fake-news/,Pfizer representatives set a car on fire to silence a medical discovery,0,0,0.8768,True
+EXT008,PolitiFact - https://politifact.com/fake-news/,Pride flags permanently prohibited at FIFA Club World Cup 2025,0,0,0.8175,True
+EXT009,PolitiFact - https://politifact.com/fake-news/,Oprah and other celebrities received millions from a political campaign,0,0,0.8445,True
+EXT010,PolitiFact - https://politifact.com/fake-news/,A news network reported thousands of votes for internet meme names,0,0,0.8885,True
+EXT011,Reuters - https://www.reuters.com/world/india/ai-pressure-client-caution-cloud-indian-it-earnings-september-quarter-2026-10-01/,AI pressure and cautious clients weigh on Indian IT firms,1,1,0.7241,True
+EXT012,Reuters - https://www.reuters.com/world/india/modis-three-pronged-challenge-2026-10-13/,India faces political and economic challenges,1,1,0.9273,True
+EXT013,Reuters - https://www.reuters.com/world/india/influential-hindu-group-urges-india-block-starlink-amid-musk-ambani-feud-2026-10-13/,Group urges India to block Starlink,1,1,0.7285,True
+EXT014,Reuters - https://www.reuters.com/commentary/breakingviews/ai-boom-stumbles-over-white-swan-events-2026-10-15/,Investors reassess risks in the AI infrastructure boom,1,1,0.5266,True
+EXT015,Reuters - https://www.reuters.com/world/india/indias-proxy-ai-trade-shines-bleak-year-stocks-2026-10-14/,AI infrastructure demand influences Indian stock performance,1,0,0.5582,False
+EXT016,PolitiFact - https://politifact.com/fake-news/,A video shows CNN reporting that a famous athlete's campaign paid celebrities,0,0,0.9539,True
+EXT017,PolitiFact - https://politifact.com/fake-news/,A photograph proves a politician worked at a fast-food restaurant,0,0,0.7764,True
+EXT018,PolitiFact - https://politifact.com/fake-news/,A television network misspelled a state name in a literacy report,0,0,0.8994,True
+EXT019,PolitiFact - https://politifact.com/fake-news/,A viral post claims a candidate promised to release a jailed foreign politician,0,1,0.618,False
+EXT020,PolitiFact - https://politifact.com/fake-news/,A viral image claims a celebrity was replaced by a clone during an arrest,0,0,0.9123,True
